@@ -1,0 +1,395 @@
+.content2 a:hover {
+    border-bottom: 3px solid #000;
+    margin-bottom: 30px;
+    font-weight: bolder;
+}
+
+.body {
+
+    display: grid;
+    grid-template-rows: 100px 1fr 600px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer"
+
+    ;
+}
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(4, 100px) 1fr repeat(5, 80px);
+    grid-template-rows: 1fr;
+    grid-template-areas: "option1 option2 option3 .  logo option4 option5 option6 option7 option8";
+    justify-items: center;
+    align-items: center;
+
+
+}
+
+.header a {
+    font-family: Roboto;
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(33, 42, 47);
+}
+
+.logo {
+    grid-area: logo;
+    align-self: center;
+}
+
+
+.option1 {
+    grid-area: option1;
+}
+
+.option2 {
+    grid-area: option2;
+}
+
+.option3 {
+    grid-area: option3;
+}
+
+.option4 {
+    grid-area: option4;
+}
+
+.option5 {
+    grid-area: option5;
+}
+
+.option6 {
+    grid-area: option6;
+}
+
+.option7 {
+    grid-area: option7;
+}
+
+.option8 {
+    grid-area: option8;
+}
+
+.main {
+    grid-area: main;
+
+
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 740px 123px 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "content1"
+        "."
+        "content2";
+}
+
+.content1 {
+    height: 740px;
+    display: grid;
+    grid-area: content1;
+    grid-template-columns: repeat(2, 740px);
+    grid-template-rows: repeat(4, 183px);
+}
+
+.content1 img {
+    width: 100vw;
+    height: 740px
+}
+
+.text1 {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    font-family: "Roboto";
+    color: white;
+    align-self: center;
+    align-self: end;
+    margin-left: 15px;
+
+}
+
+.text1_header {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.text1_main {
+    margin-top: -40px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.content2 {
+    grid-area: content2;
+    display: grid;
+    grid-template-columns: 1fr 600px 1fr;
+    grid-template-rows: 120px 80px 700px;
+    grid-template-areas: "text_favorites text_favorites text_favorites"
+        "text_everyday text_running text_travel"
+        "content_block2 content_block2 content_block2";
+    justify-items: center;
+    font-family: Roboto;
+    color: rgb(33, 42, 47);
+
+}
+
+.text_favorites {
+    grid-area: text_favorites;
+    justify-self: center;
+    font-size: 42px;
+    font-weight: 700;
+    align-self: center;
+}
+
+.text_running,
+.text_everyday,
+.text_travel {
+    text-decoration: none;
+    font-size: 24px;
+    color: rgb(33, 42, 47);
+}
+
+.text_running {
+    grid-area: text_running;
+    justify-self: center;
+
+
+}
+
+.text_everyday {
+    grid-area: text_everyday;
+    justify-self: end;
+
+
+}
+
+.text_travel {
+    grid-area: text_travel;
+    justify-self: start;
+
+}
+
+.content_block2 {
+    display: grid;
+    grid-area: content_block2;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 200px 1fr;
+    grid-template-areas: "shoes1 shoes2 shoes3"
+        "shoes1_text shoes2_text shoes3_text"
+    ;
+    gap: 10px;
+}
+
+.shoes_text_header {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.addtext_icon1,
+.addtext_icon2,
+.addtext_icon3 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.shoes1 {
+    grid-area: shoes1;
+}
+
+.shoes1_button {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    align-self: center;
+    justify-self: center;
+}
+
+.shoes1_text {
+    margin-left: 10px;
+    grid-area: shoes1_text;
+}
+
+.addtext_icon1 {
+    display: grid;
+    grid-template-rows: 30px;
+    grid-template-columns: 30px 1fr;
+    grid-template-areas: "icon1 desc_text1";
+    margin-left: 10px;
+
+}
+
+.icon1 {
+    grid-area: icon1;
+}
+
+.desc_text1 {
+    align-self: center;
+    grid-area: desc_text1;
+}
+
+.shoes2 {
+    grid-area: shoes2;
+}
+
+.shoes2_button {
+
+    grid-row: 1/2;
+    grid-column: 2/3;
+    align-self: center;
+    justify-self: center;
+}
+
+.shoes2_text {
+    grid-area: shoes2_text;
+    margin-left: 10px;
+}
+
+.addtext_icon2 {
+    display: grid;
+    grid-template-rows: 30px;
+    grid-template-columns: 30px 1fr;
+    grid-template-areas: "icon2 desc_text2";
+    margin-left: 10px;
+}
+
+.icon2 {
+    grid-area: icon2;
+}
+
+.desc_text2 {
+    align-self: center;
+    grid-area: desc_text2;
+}
+
+.shoes3 {
+    grid-area: shoes3;
+}
+
+.shoes3_button {
+
+    grid-row: 1/2;
+    grid-column: 3/4;
+    align-self: center;
+    justify-self: center;
+}
+
+.shoes3_text {
+    grid-area: shoes3_text;
+    margin-left: 10px;
+
+}
+
+.addtext_icon3 {
+    display: grid;
+    grid-template-rows: 30px;
+    grid-template-columns: 30px 1fr;
+    grid-template-areas: "icon3 desc_text3";
+}
+
+.icon3 {
+    grid-area: icon3;
+}
+
+.desc_text3 {
+    align-self: center;
+    grid-area: desc_text3;
+    margin-left: 10px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "block1 nav nav ."
+        "block4 . . block6"
+        ". block5 block5 .";
+    grid-area: footer;
+    background-color: rgb(33, 42, 47);
+    font-family: "Roboto";
+    color: rgba(255, 255, 255, 1)
+}
+
+.block1 {
+    grid-area: block1;
+}
+
+.block1 h3 {
+    font-size: 14px
+}
+
+.block1 p {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 1)
+}
+
+.block1 a {
+    font-size: 11px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1)
+}
+
+.block2 {
+    grid-area: block2;
+}
+
+.block2 h3 {
+    font-size: 14px;
+}
+
+.block2 a {
+    font-size: 11px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1)
+}
+
+.block3 {
+    grid-area: block3;
+}
+
+.block3 h3 {
+    font-size: 14px;
+}
+
+.block3 a {
+    font-size: 11px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1)
+}
+
+.block4 {
+    grid-area: block4;
+}
+
+.block4 h3 {
+    font-size: 14px;
+}
+
+.block4 div {
+    font-size: 12px;
+}
+
+.block5 {
+    grid-area: block5;
+    justify-self: center;
+}
+
+.block5 p {
+    font-size: 12px;
+}
+
+.block6 {
+    grid-area: block6;
+}
+
+.nav {
+    display: grid;
+    grid-area: nav;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "block2 block3";
+}
