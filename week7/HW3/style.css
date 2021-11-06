@@ -1,0 +1,1182 @@
+@media screen and (min-width:1024px) {
+    .content2 a:hover {
+        border-bottom: 3px solid #000;
+        margin-bottom: 30px;
+        font-weight: bolder;
+    }
+
+    .body {
+        width: 100%;
+        display: grid;
+        grid-template-rows: 2.65% 1fr 26.3%;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "footer footer"
+
+        ;
+    }
+
+    .header {
+        width: 100%;
+        grid-area: header;
+        display: grid;
+        grid-template-columns: repeat(4, 6.25%) 45% repeat(5, 5.5%);
+        grid-template-rows: 1fr;
+        grid-template-areas: "option1 option2 option3 .  logo option4 option5 option6 option7 option8";
+        justify-items: center;
+        align-items: center;
+
+
+    }
+
+
+    .header a {
+        font-family: Roboto;
+        font-size: 12px;
+        text-decoration: none;
+        color: rgb(33, 42, 47);
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .logo {
+        grid-area: logo;
+        align-self: center;
+
+    }
+
+
+    .option1 {
+        grid-area: option1;
+
+    }
+
+    .option2 {
+        grid-area: option2;
+
+    }
+
+    .option3 {
+        grid-area: option3;
+
+    }
+
+    .option4 {
+        grid-area: option4;
+
+    }
+
+    .option5 {
+        grid-area: option5;
+
+    }
+
+    .option6 {
+        grid-area: option6;
+
+    }
+
+    .option7 {
+        grid-area: option7;
+
+    }
+
+    .option8 {
+        grid-area: option8;
+
+    }
+
+    .main {
+        width: 100%;
+        grid-area: main;
+        display: grid;
+        grid-template-rows: 750px 100px 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "content1"
+            "."
+            "content2";
+    }
+
+    .content1 {
+        width: 100%;
+        background-image: url(assets/promo.jpg);
+        background-size: cover;
+        display: grid;
+        grid-area: content1;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(4, 25%);
+    }
+
+    .content1_image {
+        width: 100%;
+
+    }
+
+    .content1_text {
+        grid-row: 4/5;
+        grid-column: 1/2;
+        font-family: "Roboto";
+        color: white;
+        align-self: center;
+        align-self: end;
+        margin-left: 15px;
+
+    }
+
+    .content1_text_header {
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    .content1_text_main {
+        margin-top: -40px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .content2 {
+        grid-area: content2;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: 12% 8% 80%;
+        grid-template-areas: "text_favorites text_favorites text_favorites"
+            "text_everyday text_running text_travel"
+            "content_block2 content_block2 content_block2";
+        justify-items: center;
+        font-family: Roboto;
+        color: rgb(33, 42, 47);
+
+    }
+
+    .text_favorites {
+        grid-area: text_favorites;
+        justify-self: center;
+        font-size: 42px;
+        font-weight: 700;
+        align-self: center;
+    }
+
+    .text_running,
+    .text_everyday,
+    .text_travel {
+        text-decoration: none;
+        font-size: 20px;
+        color: rgb(33, 42, 47);
+    }
+
+    .text_running {
+        grid-area: text_running;
+        justify-self: center;
+
+
+    }
+
+    .text_everyday {
+        grid-area: text_everyday;
+        justify-self: end;
+
+
+    }
+
+    .text_travel {
+        grid-area: text_travel;
+        justify-self: start;
+
+    }
+
+    .content_block2 {
+        min-height: 0;
+        width: 80%;
+        display: grid;
+        grid-area: content_block2;
+        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+        grid-template-rows: repeat(3, minmax(0, max-content));
+        justify-content: center;
+        gap: 1.5%;
+    }
+
+    .shoes_text_header {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .addtext_icon1,
+    .addtext_icon2,
+    .addtext_icon3 {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .shoes1 {
+        width: 396px;
+        height: 600px;
+        display: grid;
+        justify-items: end;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 200px 1fr;
+        ;
+        grid-template-areas: "shoes1_image"
+            "shoes1_text"
+        ;
+        gap: 10px;
+    }
+
+    .shoes1_image {
+        grid-area: shoes1_image;
+
+        justify-self: start;
+    }
+
+    .shoes1_button {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .shoes1_text {
+        height: 110px;
+        justify-self: start;
+        margin-left: 10px;
+        grid-area: shoes1_text;
+    }
+
+    .addtext_icon1 {
+        display: grid;
+        grid-template-rows: 30px;
+        grid-template-columns: 30px 1fr;
+        grid-template-areas: "icon1 desc_text1";
+        margin-left: 10px;
+
+    }
+
+    .icon1 {
+        grid-area: icon1;
+    }
+
+    .desc_text1 {
+        align-self: center;
+        grid-area: desc_text1;
+    }
+
+    .shoes2 {
+        width: 396px;
+        height: 600px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 200px 1fr;
+        ;
+        grid-template-areas: "shoes2_image"
+            "shoes2_text"
+        ;
+        gap: 10px;
+    }
+
+    .shoes2_image {
+        grid-area: shoes2_image;
+    }
+
+    .shoes2_button {
+
+        grid-row: 1/2;
+        grid-column: 1/2;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .shoes2_text {
+        height: 110px;
+        grid-area: shoes2_text;
+        margin-left: 10px;
+    }
+
+    .addtext_icon2 {
+        display: grid;
+        grid-template-rows: 30px;
+        grid-template-columns: 30px 1fr;
+        grid-template-areas: "icon2 desc_text2";
+        margin-left: 10px;
+    }
+
+    .icon2 {
+        grid-area: icon2;
+    }
+
+    .desc_text2 {
+        align-self: center;
+        grid-area: desc_text2;
+    }
+
+    .shoes3 {
+        width: 396px;
+        height: 600px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 200px 1fr;
+        ;
+        grid-template-areas: "shoes3_image"
+            "shoes3_text"
+        ;
+        gap: 10px;
+    }
+
+    .shoes3_image {
+        grid-area: shoes3_image;
+    }
+
+    .shoes3_button {
+
+        grid-row: 1/2;
+        grid-column: 1/2;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .shoes3_text {
+        height: 110px;
+        grid-area: shoes3_text;
+        margin-left: 10px;
+
+    }
+
+    .addtext_icon3 {
+        display: grid;
+        grid-template-rows: 30px;
+        grid-template-columns: 30px 1fr;
+        grid-template-areas: "icon3 desc_text3";
+    }
+
+    .icon3 {
+        grid-area: icon3;
+    }
+
+    .desc_text3 {
+        align-self: center;
+        grid-area: desc_text3;
+        margin-left: 10px;
+    }
+
+    .footer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "block1 nav nav ."
+            "block4 . . block6"
+            ". block5 block5 .";
+        grid-area: footer;
+        background-color: rgb(33, 42, 47);
+        font-family: "Roboto";
+        color: rgba(255, 255, 255, 1)
+    }
+
+    .block1 {
+        grid-area: block1;
+        margin-left: 50px;
+
+    }
+
+    .block1 h3 {
+        font-size: 14px
+    }
+
+    .block1 p {
+        font-size: 11px;
+        color: rgba(255, 255, 255, 1)
+    }
+
+    .block1 a {
+        font-size: 11px;
+        text-decoration: none;
+
+        color: rgba(255, 255, 255, 1)
+    }
+
+    .block2 {
+        grid-area: block2;
+    }
+
+    .block2 h3 {
+        font-size: 14px;
+    }
+
+    .block2 a {
+        font-size: 11px;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 1)
+    }
+
+    .block3 {
+        grid-area: block3;
+    }
+
+    .block3 h3 {
+        font-size: 14px;
+    }
+
+    .block3 a {
+        font-size: 11px;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 1)
+    }
+
+    .block4 {
+        grid-area: block4;
+        margin-left: 50px;
+    }
+
+    .block4 h3 {
+        font-size: 14px;
+    }
+
+    .block4 div {
+        font-size: 12px;
+    }
+
+    .block5 {
+        grid-area: block5;
+        justify-self: center;
+        align-self: end;
+    }
+
+    .block5 p {
+        font-size: 12px;
+
+    }
+
+    .block6 {
+        grid-area: block6;
+    }
+
+    .nav {
+        display: grid;
+        grid-area: nav;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: "block2 block3";
+    }
+
+    ::selection {
+        background: transparent;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .content2 a:hover {
+        border-bottom: 3px solid #000;
+        margin-bottom: 30px;
+        font-weight: bolder;
+    }
+
+    .body {
+        width: 100%;
+        display: grid;
+        grid-template-rows: 2.65% 1fr 26.3%;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "footer footer"
+
+        ;
+    }
+
+    .header {
+        width: 100%;
+        grid-area: header;
+        display: grid;
+        grid-template-columns: 1fr 4% repeat(8, 10%);
+        grid-template-rows: 1fr;
+        grid-template-areas: "logo logo option1 option2 option3 option4  option5 option6 option7 option8";
+        justify-items: center;
+        align-items: center;
+
+
+    }
+
+
+    .header a {
+        font-family: Roboto;
+        font-size: 12px;
+        text-decoration: none;
+        color: rgb(33, 42, 47);
+    }
+
+    .menu {
+        display: none
+    }
+
+    .logo {
+        grid-area: logo;
+        align-self: center;
+
+    }
+
+
+    .option1 {
+        grid-area: option1;
+
+    }
+
+    .option2 {
+        grid-area: option2;
+
+    }
+
+    .option3 {
+        grid-area: option3;
+
+    }
+
+    .option4 {
+        grid-area: option4;
+
+    }
+
+    .option5 {
+        grid-area: option5;
+
+    }
+
+    .option6 {
+        grid-area: option6;
+
+    }
+
+    .option7 {
+        grid-area: option7;
+
+    }
+
+    .option8 {
+        grid-area: option8;
+
+    }
+
+    .main {
+        width: 100%;
+        grid-area: main;
+        display: grid;
+        grid-template-rows: max-content 50px 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "content1"
+            "."
+            "content2";
+    }
+
+    .content1 {
+        width: 100%;
+        height: 100vh;
+        background-image: url(assets/promo_mid.jpg);
+        background-size: cover;
+        display: grid;
+        grid-area: content1;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(4, 25%);
+    }
+
+    .content1_image {
+        width: 100%;
+
+    }
+
+    .content1_text {
+        grid-row: 4/5;
+        grid-column: 1/2;
+        font-family: "Roboto";
+        color: white;
+        align-self: center;
+        align-self: end;
+        margin-left: 15px;
+
+    }
+
+    .content1_text_header {
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    .content1_text_main {
+        margin-top: -40px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .content2 {
+        grid-area: content2;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: 8% 4% 80%;
+        grid-template-areas: "text_favorites text_favorites text_favorites"
+            "text_everyday text_running text_travel"
+            "content_block2 content_block2 content_block2";
+        justify-items: center;
+        font-family: Roboto;
+        color: rgb(33, 42, 47);
+
+    }
+
+    .text_favorites {
+        grid-area: text_favorites;
+        justify-self: center;
+        font-size: 42px;
+        font-weight: 700;
+        align-self: center;
+    }
+
+    .text_running,
+    .text_everyday,
+    .text_travel {
+        text-decoration: none;
+        font-size: 20px;
+        color: rgb(33, 42, 47);
+    }
+
+    .text_running {
+        grid-area: text_running;
+        justify-self: center;
+
+
+    }
+
+    .text_everyday {
+        grid-area: text_everyday;
+        justify-self: end;
+
+
+    }
+
+    .text_travel {
+        grid-area: text_travel;
+        justify-self: start;
+
+    }
+
+    .content_block2 {
+        min-height: 0;
+        width: 80%;
+        display: grid;
+        grid-area: content_block2;
+        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+        grid-template-rows: minmax(0, max-content) minmax(0, max-content) minmax(0, max-content);
+        justify-items: center;
+        gap: 1.5%;
+    }
+
+    .shoes_text_header {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .addtext_icon1,
+    .addtext_icon2,
+    .addtext_icon3 {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .shoes1 {
+        width: 396px;
+        height: 600px;
+        display: grid;
+        justify-items: end;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 200px 1fr;
+        ;
+        grid-template-areas: "shoes1_image"
+            "shoes1_text"
+        ;
+        gap: 10px;
+    }
+
+    .shoes1_image {
+        grid-area: shoes1_image;
+
+        justify-self: start;
+    }
+
+    .shoes1_button {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .shoes1_text {
+        height: 110px;
+        justify-self: start;
+        margin-left: 10px;
+        grid-area: shoes1_text;
+    }
+
+    .addtext_icon1 {
+        display: grid;
+        grid-template-rows: 30px;
+        grid-template-columns: 30px 1fr;
+        grid-template-areas: "icon1 desc_text1";
+        margin-left: 10px;
+
+    }
+
+    .icon1 {
+        grid-area: icon1;
+    }
+
+    .desc_text1 {
+        align-self: center;
+        grid-area: desc_text1;
+    }
+
+    .shoes2 {
+        width: 396px;
+        height: 600px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 200px 1fr;
+        ;
+        grid-template-areas: "shoes2_image"
+            "shoes2_text"
+        ;
+        gap: 10px;
+    }
+
+    .shoes2_image {
+        grid-area: shoes2_image;
+    }
+
+    .shoes2_button {
+
+        grid-row: 1/2;
+        grid-column: 1/2;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .shoes2_text {
+        height: 110px;
+        grid-area: shoes2_text;
+        margin-left: 10px;
+    }
+
+    .addtext_icon2 {
+        display: grid;
+        grid-template-rows: 30px;
+        grid-template-columns: 30px 1fr;
+        grid-template-areas: "icon2 desc_text2";
+        margin-left: 10px;
+    }
+
+    .icon2 {
+        grid-area: icon2;
+    }
+
+    .desc_text2 {
+        align-self: center;
+        grid-area: desc_text2;
+    }
+
+    .shoes3 {
+        width: 396px;
+        height: 600px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 200px 1fr;
+        ;
+        grid-template-areas: "shoes3_image"
+            "shoes3_text"
+        ;
+        gap: 10px;
+    }
+
+    .shoes3_image {
+        grid-area: shoes3_image;
+    }
+
+    .shoes3_button {
+
+        grid-row: 1/2;
+        grid-column: 1/2;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .shoes3_text {
+        height: 110px;
+        grid-area: shoes3_text;
+        margin-left: 10px;
+
+    }
+
+    .addtext_icon3 {
+        display: grid;
+        grid-template-rows: 30px;
+        grid-template-columns: 30px 1fr;
+        grid-template-areas: "icon3 desc_text3";
+    }
+
+    .icon3 {
+        grid-area: icon3;
+    }
+
+    .desc_text3 {
+        align-self: center;
+        grid-area: desc_text3;
+        margin-left: 10px;
+    }
+
+    .footer {
+        display: none !important;
+    }
+
+    ::selection {
+        background: transparent;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    .body {
+        width: 145vw;
+        display: grid;
+        grid-template-rows: 2.65% 1fr 26.3%;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "footer footer"
+
+        ;
+    }
+
+    .header {
+        width: 100%;
+        grid-area: header;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: "logo menu option6 option8";
+        justify-items: center;
+        align-items: center;
+
+
+    }
+
+
+    .header a {
+        font-family: Roboto;
+        font-size: 1rem;
+        text-decoration: none;
+        color: rgb(33, 42, 47);
+    }
+
+    .option1,
+    .option2,
+    .option3,
+    .option4,
+    .option5,
+    .option7 {
+        display: none;
+    }
+
+    .logo {
+        grid-area: logo;
+        align-self: center;
+
+    }
+
+
+    .option6 {
+        grid-area: option6;
+
+    }
+
+
+    .option8 {
+        grid-area: option8;
+
+    }
+
+    .main {
+        width: 100%;
+        grid-area: main;
+        display: grid;
+        grid-template-rows: max-content 50px 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "content1"
+            "."
+            "content2";
+    }
+
+    .content1 {
+        width: 100%;
+        height: 100vh;
+        background-image: url(assets/promo_small.jpg);
+        background-size: cover;
+        display: grid;
+        grid-area: content1;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(3, 30%);
+    }
+
+    .content1_image {
+        width: 100%;
+
+    }
+
+    .content1_text {
+        grid-row: 3/4;
+        grid-column: 1/2;
+        font-family: "Roboto";
+        color: white;
+        align-self: center;
+        align-self: end;
+        margin-left: 15px;
+
+    }
+
+    .content1_text_header {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .content1_text_main {
+        margin-top: -20px;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .content2 {
+        grid-area: content2;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 8% 4% 80%;
+        grid-template-areas: "text_favorites text_favorites text_favorites"
+            "text_everyday text_running text_travel"
+            "content_block2 content_block2 content_block2";
+        justify-items: center;
+        font-family: Roboto;
+        color: rgb(33, 42, 47);
+
+    }
+
+    .text_favorites {
+        grid-area: text_favorites;
+        justify-self: center;
+        font-size: 2rem;
+        font-weight: 700;
+        align-self: center;
+    }
+
+    .text_running,
+    .text_everyday,
+    .text_travel {
+        text-decoration: none;
+        font-size: 1rem;
+        color: rgb(33, 42, 47);
+        align-self: center;
+    }
+
+    .text_running {
+        grid-area: text_running;
+        justify-self: center;
+
+
+    }
+
+    .text_everyday {
+        grid-area: text_everyday;
+        justify-self: end;
+
+
+    }
+
+    .text_travel {
+        grid-area: text_travel;
+        justify-self: start;
+
+    }
+
+    .content_block2 {
+        min-height: 0;
+        width: 100%;
+        display: grid;
+        grid-area: content_block2;
+        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+        grid-template-rows: minmax(0, max-content) minmax(0, max-content) minmax(0, max-content);
+        justify-items: center;
+        gap: 1.5%;
+    }
+
+    .shoes_text_header {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .addtext_icon1,
+    .addtext_icon2,
+    .addtext_icon3 {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .shoes1 {
+        width: 396px;
+        height: 600px;
+        display: grid;
+        justify-items: end;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 200px 1fr;
+        ;
+        grid-template-areas: "shoes1_image"
+            "shoes1_text"
+        ;
+        gap: 10px;
+    }
+
+    .shoes1_image {
+        grid-area: shoes1_image;
+
+        justify-self: start;
+    }
+
+    .shoes1_button {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .shoes1_text {
+        height: 110px;
+        justify-self: start;
+        margin-left: 5%;
+        grid-area: shoes1_text;
+    }
+
+    .addtext_icon1 {
+        display: grid;
+        grid-template-rows: 30px;
+        grid-template-columns: 30px 1fr;
+        grid-template-areas: "icon1 desc_text1";
+        margin-left: 10px;
+
+    }
+
+    .icon1 {
+        grid-area: icon1;
+    }
+
+    .desc_text1 {
+        align-self: center;
+        grid-area: desc_text1;
+    }
+
+    .shoes2 {
+        width: 396px;
+        height: 600px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 200px 1fr;
+        ;
+        grid-template-areas: "shoes2_image"
+            "shoes2_text"
+        ;
+        gap: 10px;
+    }
+
+    .shoes2_image {
+        grid-area: shoes2_image;
+    }
+
+    .shoes2_button {
+
+        grid-row: 1/2;
+        grid-column: 1/2;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .shoes2_text {
+        height: 110px;
+        grid-area: shoes2_text;
+        margin-left: 5%;
+    }
+
+    .addtext_icon2 {
+        display: grid;
+        grid-template-rows: 30px;
+        grid-template-columns: 30px 1fr;
+        grid-template-areas: "icon2 desc_text2";
+        margin-left: 10px;
+    }
+
+    .icon2 {
+        grid-area: icon2;
+    }
+
+    .desc_text2 {
+        align-self: center;
+        grid-area: desc_text2;
+    }
+
+    .shoes3 {
+        width: 396px;
+        height: 600px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 200px 1fr;
+        ;
+        grid-template-areas: "shoes3_image"
+            "shoes3_text"
+        ;
+        gap: 10px;
+    }
+
+    .shoes3_image {
+        grid-area: shoes3_image;
+    }
+
+    .shoes3_button {
+
+        grid-row: 1/2;
+        grid-column: 1/2;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .shoes3_text {
+        height: 110px;
+        grid-area: shoes3_text;
+        margin-left: 5%;
+
+    }
+
+    .addtext_icon3 {
+        display: grid;
+        grid-template-rows: 30px;
+        grid-template-columns: 30px 1fr;
+        grid-template-areas: "icon3 desc_text3";
+    }
+
+    .icon3 {
+        grid-area: icon3;
+    }
+
+    .desc_text3 {
+        align-self: center;
+        grid-area: desc_text3;
+        margin-left: 10px;
+    }
+
+    .footer {
+        display: none !important;
+    }
+
+    ::selection {
+        background: transparent;
+    }
+}
