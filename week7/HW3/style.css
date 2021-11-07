@@ -207,7 +207,7 @@
     .addtext_icon1,
     .addtext_icon2,
     .addtext_icon3 {
-        font-size: 1rem;
+        font-size: 1em;
         font-weight: 400;
     }
 
@@ -675,7 +675,7 @@
     .addtext_icon1,
     .addtext_icon2,
     .addtext_icon3 {
-        font-size: 1rem;
+        font-size: 1em;
         font-weight: 400;
     }
 
@@ -868,7 +868,7 @@
 
     .header a {
         font-family: Roboto;
-        font-size: 1rem;
+        font-size: 1em;
         text-decoration: none;
         color: rgb(33, 42, 47);
     }
@@ -939,14 +939,14 @@
     }
 
     .content1_text_header {
-        font-size: 1.5rem;
+        font-size: 1.5em;
         font-weight: 700;
     }
 
     .content1_text_main {
         margin-top: -20px;
         font-weight: 500;
-        font-size: 1rem;
+        font-size: 1em;
     }
 
     .content2 {
@@ -966,7 +966,7 @@
     .text_favorites {
         grid-area: text_favorites;
         justify-self: center;
-        font-size: 2rem;
+        font-size: 2em;
         font-weight: 700;
         align-self: center;
     }
@@ -975,7 +975,7 @@
     .text_everyday,
     .text_travel {
         text-decoration: none;
-        font-size: 1rem;
+        font-size: 1em;
         color: rgb(33, 42, 47);
         align-self: center;
     }
@@ -1019,7 +1019,7 @@
     .addtext_icon1,
     .addtext_icon2,
     .addtext_icon3 {
-        font-size: 1rem;
+        font-size: 1em;
         font-weight: 400;
     }
 
