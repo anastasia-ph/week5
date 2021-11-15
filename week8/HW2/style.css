@@ -1,0 +1,259 @@
+@font-face {
+    font-family: Intro;
+    src: url(assets/fonts/Intro.otf);
+}
+
+.html,
+body {
+    min-width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100vw;
+    height: 5.5em;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header__logo {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    margin-left: 4.8em;
+}
+
+.header__button_size {
+    width: 115px;
+    height: 38px;
+
+}
+
+.logo__icon {
+    width: 40px;
+    height: 40px;
+}
+
+.logo__text {
+    font-family: Intro, Helvetica, sans-serif;
+    font-size: 1em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button__style {
+
+    background-color: rgb(82, 34, 208);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_link {
+    text-decoration: none;
+}
+
+.button_right-margin {
+    margin-right: 4.8em;
+}
+
+.button__text {
+    font-family: Intro, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button__text-bigger-size {
+    font-size: 35px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.block1 {
+    width: 100%;
+    display: flex;
+}
+
+.block1__text-part {
+    width: 50%;
+    justify-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-left: 8em;
+
+
+}
+
+.main__block1-image {
+    width: 50%;
+}
+
+
+
+.block1-content__summary {
+
+    font-family: Intro, Helvetica, sans-serif;
+    font-size: 60px;
+    padding-bottom: 0.6em;
+}
+
+.block1-content__description {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 20px;
+    padding-bottom: 1.7em;
+}
+
+.block1-content__button_size {
+    width: 270px;
+    height: 84px;
+}
+
+
+
+.block1-image__image {
+    width: 100%;
+}
+
+.main-block2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main-block2__content {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-block2__summary {
+    margin-left: 2.134em;
+    font-family: Intro, Helvetica, sans-serif;
+    font-size: 4em;
+    font-weight: 400;
+}
+
+@media screen and (max-width:1024px) {
+    .main-block2__content {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-left: 2.134em;
+
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .main-block2__content {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-left: 2.134em;
+
+    }
+}
+
+.block2-content__wireless-column,
+.block2-content__withoutpc-column,
+.block2-content__tenwh-column {
+    width: 30%;
+    margin-right: 20px;
+    box-sizing: border-box;
+    padding: 1.5em 1.5em 1.5em 1.5em;
+
+}
+
+
+
+.wireless-column__image,
+.withoutpc-column__image,
+.tenwh-column__image {
+    width: 100%;
+}
+
+.wireless-column-image__image,
+.withoutpc-column-image__image,
+.tenwh-column-image__image {
+    width: 100%;
+}
+
+.wireless-column__summary,
+.withoutpc-column__summary,
+.tenwh-column__summary {
+    font-family: Intro, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.wireless-column__description,
+.withoutpc-column__description,
+.tenwh-column__description {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.tenwh-column__subscription-block {
+    width: 100%;
+    height: 243px;
+    box-sizing: border-box;
+    background-color: rgb(236, 97, 91);
+    padding-left: 1em;
+    padding-top: 1em;
+
+}
+
+.subscription-block__title {
+    font-family: Intro, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+    margin: 0px 0px 0.5em 0px;
+}
+
+.subscription-block__input {
+    width: 95%;
+    height: 49.5px;
+    border: none;
+    padding: 0;
+    margin: 0px 0px 1.5em 0px;
+}
+
+.subscription-block__button_size {
+    width: 135px;
+    height: 38px;
+}
+
+.footer {
+    flex-shrink: 0;
+    width: 50%;
+    height: 3em;
+    margin-left: 136px;
+    box-sizing: border-box;
+}
+
+.footer__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer_nav-element {
+    font-size: 1em;
+    font-family: 'Roboto Slab', sans-serif;
+    text-decoration: none;
+    color: black;
+}
