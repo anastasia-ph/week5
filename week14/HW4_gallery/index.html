@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: "title title title"
+                "left-button gallery right-button";
+        }
+
+        .gallery-title {
+            grid-area: title;
+            justify-self: center;
+            font-size: 2rem;
+        }
+
+        .gallery-pictures {
+            grid-area: gallery;
+            display: flex;
+            flex-direction: row;
+            justify-self: center;
+
+        }
+
+        .gallery-pictures__picture {
+            width: 400px;
+            height: 400px;
+            margin-left: 15px;
+            margin-right: 15px;
+            overflow: hidden;
+
+        }
+
+        #rightBlock {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #leftBlock {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .button-arrow {
+            width: 50px;
+            height: 50px;
+            background-color: #bdaf81;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button-arrow:active {
+            background-color: #bdaf81;
+            transition: 0.1s;
+            box-shadow: inset 2px 2px rgb(92, 91, 91);
+        }
+
+        .back-button {
+            grid-area: left-button;
+            justify-self: end;
+            align-self: center;
+        }
+
+        .next-button {
+            grid-area: right-button;
+            justify-self: start;
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <p class="gallery-title">Small gallery</p>
+        <div class="gallery-pictures">
+            <div class="gallery-pictures__picture picture__left-block">
+                <img id="leftBlock" src='images/placeholder.jpg' alt="placeholder">
+            </div>
+            <div class="gallery-pictures__picture picture__right-block">
+                <img id="rightBlock" src='images/placeholder.jpg' alt="placeholder">
+            </div>
+        </div>
+        <button type="button" onclick="changePhotoBack()" class="button-arrow back-button">&#8592;
+        </button>
+        <button type="button" onclick="changePhotoNext()" class="button-arrow next-button">&#8594;
+        </button>
+    </div>
+    <script src="index.js">
+
+    </script>
+</body>
+
+</html>
