@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .registration-form {
+            display: flex;
+            flex-direction: column;
+            width: 550px;
+            height: min-content;
+            background-color: #E2D5D5;
+
+            border: 5px solid #BBBBBB;
+            padding-bottom: 1em;
+        }
+
+        .registration-form__title {
+            margin-left: 5px;
+            font: 1.3rem "Verdana", sans-serif;
+            color: #4C4C6D;
+        }
+
+
+        .registration-form__block {
+            margin-left: 5px;
+            font: 1rem "Verdana", sans-serif;
+            color: #4C4C6D;
+        }
+
+        .registration-form__block-input {
+            border: none;
+            width: 50%;
+        }
+
+        .registration-form__button {
+            width: 100px;
+            height: 50px;
+            align-self: center;
+            font: 1rem "Verdana", sans-serif;
+            color: #d9d9eb;
+            background-color: #8E7F7F;
+        }
+
+        .regristration-form__message {
+            margin-top: 5px;
+            margin-left: 5px;
+            font: 1rem "Verdana", sans-serif;
+
+        }
+
+        .message_error {
+            color: red;
+        }
+
+        .message_success {
+            color: seagreen;
+        }
+    </style>
+</head>
+
+<body class="wrapper">
+    <form class="registration-form">
+        <p class="registration-form__title">Пожалуйста, заполните форму регистрации</p>
+        <p class="registration-form__block">Введите Ваше имя: <input class="registration-form__block-input"
+                placeholder="Введите Ваше имя" id="userName"></p>
+        <p class="registration-form__block">Введите Ваш email: <input class="registration-form__block-input"
+                placeholder="Введите Ваш email" id="userEmail">
+        </p>
+        <p class="registration-form__block">Введите новый пароль: <input class="registration-form__block-input"
+                type="password" placeholder="Введите новый пароль" id="userPassword"></p>
+        <p class="registration-form__block">Введите номер телефона: <input class="registration-form__block-input"
+                placeholder="Введите номер телефона" id="userPhoneNumber"></p>
+        <p class="registration-form__block">Введите Вашу дату рождения: <input class="registration-form__block-input"
+                type="date" id="userBirthDate"></p>
+        <button type="button" class="registration-form__button" id="button">Готово!</button>
+        <div class="regristration-form__message message_error" id="errorForm"></div>
+        <div class="regristration-form__message message_success" id="greetingForm"></div>
+
+
+        <script src="index.js"></script>
+    </form>
+</body>
+
+</html>

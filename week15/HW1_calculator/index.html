@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .numberForm {
+            margin-bottom: 10px;
+        }
+
+        .numberForm input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="font-size: 25px;margin-bottom: 2%; display: flex;">Calculator</div>
+    <div class="numberForm">
+        <input id="firstNumber" placeholder="Введите первое число">
+        <input id="secondNumber" placeholder="Введите второе число">
+    </div>
+
+    <button style="width: 100px; height: 50px; font-size: 25px;" onclick="addNumbers()" id="plus">+</button>
+    <button style=" width: 100px; height: 50px; font-size: 25px;" onclick="subtractNumbers()">-</button>
+    <button style="width: 100px; height: 50px; font-size: 25px;" onclick="multiplyNumbers()">*</button>
+    <button style="width: 100px; height: 50px; font-size: 25px;" onclick="divideNumbers()">/</button>
+    <button style="width: 100px; height: 50px; font-size: 25px;" onclick="clearFields()">Clear</button>
+    <p>Ваш результат:</p>
+    <div id="resultOutput"></div>
+    <div id="errorMessage"></div>
+    <script src="index.js"></script>
+</body>
+
+</html>
