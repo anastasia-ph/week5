@@ -4,6 +4,9 @@ function backgroundColorSwitch() {
 let bodyBackground = document.getElementsByClassName("wrapper");
 let selectForm = document.getElementById("selectForm").value;
 switch (selectForm){
+    case 'white':
+        bodyBackground[0].style.background = "white";
+        break;
     case 'blue':
         bodyBackground[0].style.background = "deepskyblue";
         break;
