@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .car-calculator {
+            display: flex;
+            flex-direction: column;
+            width: 600px;
+            height: min-content;
+            background-color: #ffffff;
+
+            border: 2px solid #919191;
+            padding: 1em;
+        }
+
+        .car-calculator__button {
+            width: 150px;
+            height: 50px;
+            align-self: center;
+            font: 1rem "Verdana", sans-serif;
+            color: #f5f5f5;
+            background-color: #468a64;
+        }
+
+        .car-calculator__message {
+            margin-top: 5px;
+            margin-left: 5px;
+            font: 1rem "Verdana", sans-serif;
+
+        }
+
+        .message_error {
+            color: red;
+        }
+
+        .message_success {
+            color: seagreen;
+        }
+    </style>
+</head>
+
+<body class="wrapper">
+    <form class="car-calculator">
+        <h2>Калькулятор расчета стоимости автомобиля</h2>
+        <p>Выберите марку автомобиля:</p>
+        <select id="carLabels">
+            <option value="0">Не выбрано</option>
+            <option value="1">Citroen</option>
+            <option value="2">Lexus</option>
+            <option value="3">Porsche</option>
+        </select>
+        <p>Выберите модель автомобиля:</p>
+        <select id="carModels" disabled></select>
+        <p>Выберите возраст автомобиля:</p>
+        <div id="carAgeBlock">
+            <input type="radio" name="carAge" id="ageNew" value="0" checked>
+            <label for="ageNew">До 1 года</label> <br />
+            <input type="radio" name="carAge" id="ageMedium" value="1000">
+            <label for="ageMedium">От 1 до 3 лет</label> <br />
+            <input type="radio" name="carAge" id="ageOld" value="2000">
+            <label for="ageOld">От 3 до 5 лет</label> <br />
+            <input type="radio" name="carAge" id="ageVeryOld" value="3500">
+            <label for="ageVeryOld">Больше 5 лет</label>
+        </div>
+
+        <p>Укажите объем двигателя (см3):</p>
+        <input id="carEngine" type="text">
+
+        <p>Укажите дополнительные элементы для машины (опционально):</p>
+        <div id="carOptionsBlock">
+            <input type="checkbox" name="carOptions" id="carNeonOutside" value="100">
+            <label for="carNeonOutside">Неоновая подсветка снаружи</label> <br />
+            <input type="checkbox" name="carOptions" id="carNeonInside" value="100">
+            <label for="carNeonInside">Неоновая подсветка внутри</label> <br />
+            <input type="checkbox" name="carOptions" id="carFur" value="300">
+            <label for="carNeonOutside">Салон с исскуственным мехом</label> <br />
+            <input type="checkbox" name="carOptions" id="carAudio" value="500">
+            <label for="carNeonOutside">Аудиосистема</label> <br />
+        </div>
+
+
+
+
+
+        <button type="button" class="car-calculator__button" id="button">Рассчитать стоимость</button>
+        <div class="car-calculator__message message_error" id="errorForm"></div>
+        <div class="car-calculator__message message_success" id="finalOutput"></div>
+
+
+        <script src="index.js"></script>
+    </form>
+</body>
+
+</html>
