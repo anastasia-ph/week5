@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .user-section {
+            width: 50%;
+        }
+
+        .user-setup {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .user-setup__input {
+            width: 300px;
+            margin-bottom: 15px;
+        }
+
+        .user-setup__error-message {
+            color: red;
+        }
+
+        #commentBox {
+            width: 300px;
+            height: 150px;
+        }
+
+        .submit-button {
+            width: 100px;
+            height: 30px;
+            margin-top: 10px;
+        }
+
+        .comment-section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .comment-section__output {
+            margin-top: 35px;
+        }
+
+
+        .profile-section {
+            width: 50%;
+        }
+
+        .profile-section__user-avatar {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            background: transparent;
+        }
+
+        .user-avatar_invisible-default {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="wrapper">
+    <div class="user-section">
+        <div class="user-setup">
+            <p>Пожалуйста, заполните информацию о себе!</p>
+
+            <input class="user-setup__input" id="inputUserName" placeholder="Введите имя" required>
+            <input class="user-setup__input" id="inputUserAvatar" placeholder="Ссылка на аватар" required>
+            <p class="user-setup__error-message" id="errorMessage"></p>
+            <button type="button" class="submit-button" onclick="setValuesFromStorage()">Сохранить</button>
+
+        </div>
+        <div class="comment-section comment-section__input">
+            <p>Оставьте ваш комментарий:</p>
+            <textarea id="commentBox"></textarea>
+            <button type="button" class="submit-button" id="submitButton" onclick="postComment()">Отправить</button>
+        </div>
+        <div class="comment-section comment-section__output">
+            <p>Комментарии:</p>
+            <div id="uploadedComments">
+            </div>
+        </div>
+    </div>
+
+    <div class="profile-section">
+        <img id="userAvatarProfile" class="profile-section__user-avatar user-avatar_invisible-default" src=""
+            alt="user avatar">
+        <p id="userNameProfile" class="profile-section__user-name"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

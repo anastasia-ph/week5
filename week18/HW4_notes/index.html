@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+
+        .notes-title {
+            font-size: 24px;
+        }
+
+        .notes-input {
+            width: 300px;
+            height: 150px;
+            resize: none;
+        }
+
+        .notes-button_block {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+        }
+
+        .notes-button {
+            margin-top: 15px;
+            width: 140px;
+            margin-bottom: 15px;
+
+
+        }
+    </style>
+</head>
+
+<body class="wrapper">
+    <p class="notes-title">Заметки</p>
+    <textarea class="notes-input" id="notesInput"></textarea>
+    <div class="notes-button_block">
+        <button type="button" id="notesButton" class="notes-button">Сохранить заметку</button>
+        <button type="button" id="clearButton" class="notes-button">Очистить всё</button>
+    </div>
+    <div class="notes-area" id="notesArea"></div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
