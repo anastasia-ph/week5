@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+        }
+
+        .card {
+            width: 400px;
+            margin: 15px 10px;
+            display: flex;
+            flex-direction: column;
+            border: 2px inset black;
+
+        }
+
+        .card__header {
+            font: bold 20px "Times New Roman";
+        }
+
+        .card__container {
+            margin: 5px 5px;
+            line-height: 1.3em;
+        }
+
+
+        .container__rate-header {
+            font: bold 26px "Times New Roman";
+            color: indigo;
+        }
+
+        .container__value-output {
+            font: bold 22px "Times New Roman";
+            color: indigo;
+        }
+
+        .image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container" class="container">
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
