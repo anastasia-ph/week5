@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .user-input {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .user-input__block {
+            flex-direction: column;
+        }
+
+        .input__field {
+            width: 250px;
+            margin-right: 10px;
+            margin-top: 5px;
+            justify-self: center;
+        }
+
+        .input__button {
+            width: 30px;
+            height: 30px;
+
+        }
+
+        .img {
+            margin: 10px 10px;
+            width: 300px;
+            height: 300px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body class="wrapper">
+    <h2>5 GIFs for good mood :)</h2>
+    <div class="user-input">
+        <div class="user-input__block">
+            <input type="text" id="inputField" placeholder="Type your search here" class="input__field">
+            <p id="errorMessage"></p>
+        </div>
+        <button type="button" class="input__button" id="searchButton">Go!</button>
+    </div>
+
+    <div id="output"></div>
+    <script src="index.js"></script>
+</body>
+
+</html>

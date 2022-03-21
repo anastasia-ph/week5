@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница опроса</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1998/1998592.png" type="image/png">
+    <style>
+        .input__required:required:valid {
+            border: 2px solid green;
+        }
+
+        .input__hint {
+            font-size: 12px;
+            margin-top: -5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Опрос для обладателей котов:</h1>
+    <form>
+        <fieldset>
+            <p><b>Поля, помеченные *, обязательны для заполнения</b></p>
+            <legend>Основные данные</legend>
+            <p>Кличка питомца: <input class="input__required" id="catName" type="text" required /> *</p>
+            <p>Имя владельца: <input class="input__required" id="ownerName" type="text" required /> *</p>
+            <p>Email владельца: <input class="input__required" id="ownerMail" type="email" required /> *</p>
+            <p>Номер владельца: <input class="input__required" id="ownerNumber" type="tel" maxlength="13" required /> *
+            </p>
+            <p class="input__hint">Формат: +380123456789</p>
+        </fieldset>
+        <p>Порода питомца:
+            <select id="animalBreed">
+                <option value="zero option" selected="selected">Выберите породу...</option>
+                <option value="bengalCat">Бенгальская кошка</option>
+                <option value="egyptianMau">Египетская Мау</option>
+                <option value="seychelloisCat">Сейшельская кошка</option>
+                <option value="turkishAngora">Турецкая ангора</option>
+                <option value="chausie">Чаузи</option>
+            </select>
+        </p>
+        <p>Укажите чем питается: <br />
+
+            <input type="checkbox" id="food1" name="food" value="dry" />
+            <label for="food1">Cухой корм <br /></label>
+
+            <input type="checkbox" name="food" id="food2" value="wet" />
+            <label for="food2">Влажный корм <br /></label>
+
+            <input type="checkbox" name="food" id="food3" value="natural" />
+            <label for="food3">Натуральный корм <br /></label>
+
+        </p>
+        <p>
+            Укажите пол питомца: *<br />
+            <input type="radio" id="s1" name="gender" value="male" required />
+            <label for="s1">Самец</label> <br />
+            <input type="radio" id="s2" name="gender" value="female" required />
+            <label for="s2">Самка</label> <br />
+        </p>
+
+        <p>Комментарий хозяина:
+            <textarea rows="5" cols="20" id="comment"></textarea>
+            <label for="comment"></label>
+        </p>
+
+        <p>
+            Добавьте фото:<input type="file" />
+        </p>
+
+        <input type="button" id="submitButton" value="Отправить">
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>
