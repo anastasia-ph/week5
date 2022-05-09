@@ -2,9 +2,13 @@ import React from "react";
 
 function Card(props) {
     const style = props.style;
+    const handleClick = () => {
+        props.onClick(props.header)
+        console.log(props.header)
+    }
     let cardBody;
 
-    if (props.Active) {
+    if (props.isSelected) {
         cardBody = style.card_selected
     }
     else {
@@ -13,7 +17,7 @@ function Card(props) {
 
     return (
 
-        < div className={cardBody}>
+        < div className={cardBody} onClick={handleClick}>
             <div className={style.card__header} >{props.header}</div>
             <div className={style.card__body}>
                 <div className={style.card__price_block}>
